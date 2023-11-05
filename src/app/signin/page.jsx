@@ -1,10 +1,12 @@
 
 import SignIn from "../../components/Auth/SignIn"
 
-const SigninPage = () => {
+const SigninPage = ({searchParams:{callbackUrl}}) => {
+    console.log(callbackUrl);
+    // console.log(searchParams);
     return (
         <>
-           <SignIn/>
+           <SignIn callbackUrl={callbackUrl || "/"}/>
         </>
     );
 };
