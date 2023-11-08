@@ -1,11 +1,14 @@
-"use client"
+"use client";
+
+import Profile from "../../../components/Profile/Profile";
 
 const ProfileClient = () => {
-    return (
-        <div>
-            Profile Client
-        </div>
-    );
+  return (
+    <>
+      <h1 style={{ color: "red" }}>Profile Client Side</h1>
+      <Profile />
+    </>
+  );
 };
 
 export default ProfileClient;

@@ -6,7 +6,7 @@ import SignOut from "../../components/Auth/SignOut"
 
 const Header = async () => {
     const session = await getServerSession(authOptions)
-    console.log(session);
+    // console.log(session);
     return (
         <div style={{display:"flex",gap:30}}>
             <Link href="/">Home</Link>
